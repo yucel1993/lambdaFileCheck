@@ -1,6 +1,12 @@
+
+# AWS Lambda S3 File Handler
+
+This project implements an AWS Lambda function that processes files uploaded to an S3 bucket. The Lambda function detects the MIME type of the uploaded files and organizes them into specific folders based on their type.
+
 ### Project Setup
-in this repo, do `mkdir python`
-execute following 
+- Replace `<your-bucket-name>` with the actual name of your S3 bucket in the IAM policy sections.
+- in this repo, do `mkdir python`
+- execute following 
 ```
 pip install python-magic -t python/
 pip install libmagic -t python/
@@ -12,7 +18,7 @@ zip -r lambda-magic.zip python/ lambda.py
 Go to the lamda function and upload from zip file
 Upload and select your lambda-magic.zip file
 
-### Lmbda Role
+### Lambda Role
 I am Role for lamda to execute S3
 ```
 {
@@ -38,7 +44,7 @@ I am Role for lamda to execute S3
 
 ```
 ### S3 Role
-I am role for S3 to invoke lamda
+I am role for S3 to invoke lambda
 
 ```
 {
