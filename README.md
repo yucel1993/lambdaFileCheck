@@ -14,7 +14,7 @@ Upload and select your lambda-magic.zip file
 
 ### Lmbda Role
 I am Role for lamda to execute S3
-`
+```
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -36,11 +36,11 @@ I am Role for lamda to execute S3
     ]
 }
 
-`
+```
 ### S3 Role
 I am role for S3 to invoke lamda
 
-`
+```
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -62,4 +62,4 @@ I am role for S3 to invoke lamda
     ]
 }
 
-`
+```
