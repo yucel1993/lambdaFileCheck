@@ -1,3 +1,4 @@
+### Project Setup
 in this repo, do `mkdir python`
 execute following 
 `
@@ -11,6 +12,7 @@ zip -r lambda-magic.zip python/ lambda.py
 Go to the lamda function and upload from zip file
 Upload and select your lambda-magic.zip file
 
+### Lmbda Role
 I am Role for lamda to execute S3
 `
 {
@@ -35,7 +37,7 @@ I am Role for lamda to execute S3
 }
 
 `
-
+### S3 Role
 I am role for S3 to invoke lamda
 
 `
